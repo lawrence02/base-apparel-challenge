@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Base Apparel Coming Soon Page</title>
+  <style>
+    /* styles.css */
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: block;
+      margin-bottom: 20px;
+
+    }
+
+    .box-wrapper {
+      display: flex;
+    }
+
+    .box {
+      flex: 1;
+      height: 400px;
+      background-color: white;
+      margin: 10px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    footer {
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        max-width: 90%;
+        padding: 10px;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box-wrapper">
+      <div class="box" style="background-image: url('images/bg-pattern-desktop.svg');">
+        <img src="images/logo.svg" alt="Base Apparel Logo" class="logo">
+        <p style="width: 300px;">We're coming soon
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.</p>
+        <div>
+          <p class="smalltext"><span id="days" class="days"></span> Days</p>
+        </div>
+
+        <div>
+          <p class="smalltext"><span id="hours" class="hours"></span> Hours</p>
+        </div>
+
+        <div>
+          <p class="smalltext"><span id="minutes" class="minutes"></span> Minutes</p>
+        </div>
+
+        <div>
+          <p class="smalltext"><span id="seconds" class="seconds"></span> Seconds</p>
+
+        </div>
+        <form action="#" method="post" class="subscribe-form">
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          <button type="submit">
+            <img src="images/icon-arrow.svg" alt="Submit">
+          </button>
+        </form>
+        <div class="error-message"></div>
+      </div>
+      <div class="box">
+        <img src="images/hero-desktop.jpg" alt="Base Apparel Logo" width="350" height="390" class="logo">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Lawrence Chirowodza</a>.
+    </p>
+  </footer>
+  <script src="countdown.js"></script>
+</body>
+
+</html>

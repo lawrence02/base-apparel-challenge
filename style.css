@@ -1,0 +1,73 @@
+/* styles.css */
+.container {
+    display: flex;
+}
+
+.left-container {
+    flex: 1;
+    background-image: url('images/bg-pattern-desktop.svg');
+    width: 390px;
+    height: 390px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.right-container {
+    flex: 1;
+    /* background-image: url('images/hero-desktop.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+input[type="email"] {
+    padding: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+    border: none;
+    width: 20rem;
+    font-family: inherit;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: #2acfcf;
+    color: #fff;
+    border: none;
+    border-radius: 0 2rem 2rem 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%;
+    }
+
+    /* Rest of the CSS code */
+}
